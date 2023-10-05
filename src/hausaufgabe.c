@@ -14,15 +14,15 @@ int main()
         return 1;
     }
 
-    printf("Login mit Daten:\n")
+    printf("Login mit Daten:\n");
 
-    do {
+    while (ch != EOF) {
         ch = fgetc(ptr);
         if (ch != EOF) {
             putchar(ch);
         }
 
-    } while (ch != EOF);
+    }
 
     fclose(ptr);
     return 0;
